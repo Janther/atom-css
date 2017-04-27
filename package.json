@@ -1,0 +1,8 @@
+{
+  "name": "atom-css",
+  "version": "1.0.0",
+  "description": "Compiled Atom CSS",
+  "main": "index.js",
+  "author": "Klaus Hott Vidal <klahott@gmail.com>",
+  "license": "MIT"
+}
