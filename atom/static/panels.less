@@ -1,12 +1,18 @@
-// Import from the ui theme's variables with a fallback to ./variables/ui-variables.less
-@import "./variables/ui-variables";
-@import "../../one-dark-ui/styles/ui-variables";
+@import "atom/static/variables/ui-variables";
+@import "atom-dark-ui/styles/ui-variables";
 
 // Atom panels
 
 .atom-panel-container.left,
 .atom-panel-container.right {
   display: flex;
+}
+
+.atom-panel-container.left {
+  // Align panels to the right of the panel container. The effect of this is
+  // that the left dock's toggle button will appear on the right side of the
+  // empty space when the panel container has a min width in the theme.
+  justify-content: flex-end;
 }
 
 .tool-panel, // deprecated: .tool-panel

@@ -1,6 +1,6 @@
-// Import from the ui theme's variables with a fallback to ./variables/ui-variables.less
-@import "./variables/ui-variables";
-@import "../../one-dark-ui/styles/ui-variables";
+@import "atom/static/variables/ui-variables";
+@import "atom-dark-ui/styles/ui-variables";
+
 // Pane-items are things that go inside a pane. Like the UI-Demo, the
 // settings-view, the archive-view, the image-view. Etc. Basically a non-
 // editor resource with a tab.
@@ -79,7 +79,8 @@
         background-color: @pane-item-background-color;
       }
 
-      > *, > .atom-text-editor.react > * {
+      > *,
+      > .atom-text-editor.react > * {
         position: absolute;
         top: 0;
         right: 0;

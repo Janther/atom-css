@@ -1,14 +1,14 @@
 // Import from the syntax theme's variables with a fallback to ./variables/syntax-variables.less
-@import "./variables/syntax-variables";
-@import "../../one-dark-syntax/styles/syntax-variables";
+@import "atom/static/variables/syntax-variables";
+@import "atom-dark-syntax/styles/syntax-variables";
 
 // Import from the ui theme's variables with a fallback to ./variables/ui-variables.less
-@import "./variables/ui-variables";
-@import "../../one-dark-ui/styles/ui-variables";
+@import "atom/static/variables/ui-variables";
+@import "atom-dark-ui/styles/ui-variables";
 
 // Octicons
-@import "octicon-utf-codes";
-@import "octicon-mixins";
+@import "atom/static/variables/octicon-utf-codes";
+@import "atom/static/variables/octicon-mixins";
 @import "octicons";
 
 // Normalize + scaffolding
@@ -18,11 +18,12 @@
 // Core components
 @import "cursors";
 @import "panels";
+@import "docks";
 @import "panes";
 @import "syntax";
-@import "text-editor-light";
+@import "text-editor";
 @import "title-bar";
 @import "workspace-view";
 
 // Atom UI library
-@import "../../atom-ui/atom-ui.less";
+@import "atom-ui/atom-ui.less";
